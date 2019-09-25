@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/smartbasket/css/smartbasket.min.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+      button,h4,span,option,h3,p,input,a {Font-family: 'Comfortaa', cursive;}
+      
+    </style>
+    <style>
+    .a{color: grey}
+    </style>
+
+<body>
+  <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+          <a class="navbar-brand" href="#"><strong class="sign__word">G-Katalog</strong></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="E:/Study/CurseWork/NodeAPI/public/index.html">Домой <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Экшн</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Приключения</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">РПГ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Симуляторы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Инди</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Стратегии</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ММО</a>
+          </li>
+
+            </li>
+              </ul>
+              
+                
+              <ul class="navbar-nav ml-auto nav-flex-icons">
+                  <li class="nav-item">
+                      <a class="nav-link waves-effect waves-light">
+                          <i class="fas fa-headset" data-toggle="modal" data-target="#contact"></i>
+                      </a>
+                    </li>
+                <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light">
+                    <i class="fas fa-luggage-cart" data-toggle="modal" data-target="#modalCart"></i>
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                    aria-labelledby="navbarDropdownMenuLink-333">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+              
+            </div>
+            <form class="form-inline ml-auto">
+              <div class="md-form my-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                
+              </div>
+            </form>
+          </nav>
+  
+</header>
+
+<body style="margin-top: 75px">
+<!-- Modal: modalCart -->
+<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Contact us</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+
+    <!-- Name -->
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+
+    <!-- Email -->
+    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+    <!-- Subject -->
+    <label>Subject</label>
+    <select class="browser-default custom-select mb-4">
+        <option value="" disabled>Choose option</option>
+        <option value="1" selected>Feedback</option>
+        <option value="2">Report a bug</option>
+        <option value="3">Feature request</option>
+        <option value="4">Feature request</option>
+    </select>
+
+    <!-- Message -->
+    <div class="form-group">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+    </div>
+
+    <!-- Copy -->
+    <div class="custom-control custom-checkbox mb-4">
+        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+    </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal: modalCart -->
+
+
+<!-- Modal: modalCart -->
+<div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Your cart</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+
+        <table class="table table-hover" id="cartTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Product name</th>
+              <th>Price</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Product 1</td>
+              <td>100$</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal: modalCart -->
+
+
+<!-- Section: Products v.4 -->
+<section class="text-center my-5">
+
+  
+    <!-- Grid row -->
+    <div class="row">
+  
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+        <!-- Collection card -->
+        <div class="card collection-card z-depth-1-half">
+                <!-- Card image -->
+                <div class="view zoom">
+                      <div class="view overlay">
+                  <img src="https://i.pinimg.com/736x/de/ae/8b/deae8be4e0894f57d231cb957449708e--hd-desktop-download.jpg" class="img-fluid"
+                    alt="">
+                    <div class="mask flex-center rgba-black-strong">
+                          <p class="white-text">Counter Strike GO <i class="fas fa-search"></i></p>
+                      </div>
+                  </div>
+                
+                </div>
+          <!-- Card image -->
+        </div>
+        <!-- Collection card -->
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+        <!-- Collection card -->
+        <div class="card collection-card z-depth-1-half">
+                <!-- Card image -->
+                <div class="view zoom">
+                      <div class="view overlay">
+                  <img src="https://4pubg.com/wp-content/uploads/2019/01/обои-pubg-на-телефон-12.jpg" class="img-fluid"
+                    alt="">
+                    <div class="mask flex-center rgba-black-strong">
+                          <p class="white-text">PUBG <i class="fas fa-search"></i></p>
+                      </div>
+                  </div>
+                
+                </div>
+          <!-- Card image -->
+        </div>
+        <!-- Collection card -->
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-md-0 mb-4">
+        <!-- Collection card -->
+        <div class="card collection-card z-depth-1-half">
+                <!-- Card image -->
+                <div class="view zoom">
+                      <div class="view overlay">
+                  <img src="https://i.pinimg.com/736x/f4/ad/2a/f4ad2ac00a2a4d5d9be52a011dd6086b.jpg" class="img-fluid"
+                    alt="">
+                    <div class="mask flex-center rgba-black-strong">
+                          <p class="white-text">Far Cry V <i class="fas fa-search"></i></p>
+                      </div>
+                  </div>
+                
+                </div>
+          <!-- Card image -->
+        </div>
+        <!-- Collection card -->
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Fourth column -->
+      <div class="col-lg-3 col-md-6">
+        <!-- Collection card -->
+        <div class="card collection-card z-depth-1-half">
+                <!-- Card image -->
+                <div class="view zoom">
+                      <div class="view overlay">
+                  <img src="http://getwallpapers.com/wallpaper/full/9/f/6/240492.jpg" class="img-fluid"
+                    alt="">
+                    <div class="mask flex-center rgba-black-strong">
+                          <p class="white-text">Dark Souls III <i class="fas fa-search"></i></p>
+                      </div>
+                  </div>
+                
+                </div>
+          <!-- Card image -->
+        </div>
+        <!-- Collection card -->
+      </div>
+      <!-- Fourth column -->
+  
+    </div>
+    <!-- Grid row -->
+  
+  </section>
+  <!-- Section: Products v.4 -->
+  
+          <!-- Section: Products v.4 -->
+<section class="text-center my-5">
+
+   
+  
+    <!-- Grid row -->
+    <div class="row">
+  
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+        <!-- Collection card -->
+        <div class="card collection-card z-depth-1-half">
+                <!-- Card image -->
+                <div class="view zoom">
+                      <div class="view overlay">
+                  <img src="https://i.pinimg.com/736x/4e/60/7e/4e607eebee29e8555519ff9409552c29--tom-clancy-the-division-survival-guide.jpg" class="img-fluid"
+                    alt="">
+                    <div class="mask flex-center rgba-black-strong">
+                          <p class="white-text">The Division <i class="fas fa-search"></i></p>
+                      </div>
+                  </div>
+                
+                </div>
+          <!-- Card image -->
+        </div>
+        <!-- Collection card -->
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+        <!-- Collection card -->
+        <div class="card collection-card z-depth-1-half">
+                <!-- Card image -->
+                <div class="view zoom">
+                      <div class="view overlay">
+                  <img src="https://img3.akspic.com/image/128173-symbol-scorpion-video_games-logo-mortal_kombat_x-1080x1920.jpg" class="img-fluid"
+                    alt="">
+                    <div class="mask d-flex flex-column flex-center rgba-black-strong">
+                          <p class="white-text">Mortal Combat X <i class="fas fa-search"></i></p>
+                          <button type="button" class="btn btn-elegant" OnClick="addRow(cartTable);"
+                          data-sb-id-or-vendor-code="0032pz"
+                          data-sb-product-name="Mortal Combat X"
+                          data-sb-product-price="1000"
+                          data-sb-product-quantity="1"
+                          data-sb-product-img="https://img3.akspic.com/image/128173-symbol-scorpion-video_games-logo-mortal_kombat_x-1080x1920.jpg">
+                          Add To Cart</button>
+                      </div>
+                  </div>
+                
+                </div>
+          <!-- Card image -->
+        </div>
+        <!-- Collection card -->
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-6 mb-md-0 mb-4">
+        <!-- Collection card -->
+        <div class="card collection-card z-depth-1-half">
+                <!-- Card image -->
+                <div class="view zoom">
+                      <div class="view overlay">
+                  <img src="https://i.imgur.com/j3Ux1Vn.png" class="img-fluid"
+                    alt="">
+                    <div class="mask flex-center rgba-black-strong">
+                          <p class="white-text">Fallout 76 <i class="fas fa-search"></i></p>
+                      </div>
+                  </div>
+                
+                </div>
+          <!-- Card image -->
+        </div>
+        <!-- Collection card -->
+      </div>
+      <!-- Grid column -->
+  
+      <!-- Fourth column -->
+      <div class="col-lg-3 col-md-6">
+        <!-- Collection card --><div class="card collection-card z-depth-1-half">
+          <!-- Card image -->
+          <div class="view zoom">
+                <div class="view overlay">
+            <img src="https://s1.1zoom.ru/b5246/415/Dishonored_Warriors_2_Emily_Kaldwin_Head_533189_1080x1920.jpg" class="img-fluid"
+              alt="">
+              <div class="mask flex-center rgba-black-strong">
+                    <p class="white-text">Dishonored 2 <i class="fas fa-search"></i></p>
+                </div>
+            </div>
+          
+          </div>
+        
+          <!-- Card image -->
+        </div>
+        <!-- Collection card -->
+      </div>
+      <!-- Fourth column -->
+  
+    </div>
+    <!-- Grid row -->
+  
+  </section>
+  <!-- Section: Products v.4 -->
+  
+  <!-- Section: Products v.4 -->
+<section class="text-center my-5">
+
+        
+      
+        <!-- Grid row -->
+        <div class="row">
+      
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+            <!-- Collection card -->
+            <div class="card collection-card z-depth-1-half">
+                    <!-- Card image -->
+                    <div class="view zoom">
+                          <div class="view overlay">
+                      <img src="https://i.pinimg.com/736x/76/62/de/7662de7223da6bcc52ac8a115cad5581.jpg" class="img-fluid"
+                        alt="">
+                        <div class="mask flex-center rgba-black-strong">
+                              <p class="white-text">Devil May Cry V <i class="fas fa-search"></i></p>
+                          </div>
+                      </div>
+                    
+                    </div>
+              <!-- Card image -->
+            </div>
+            <!-- Collection card -->
+          </div>
+          <!-- Grid column -->
+      
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+            <!-- Collection card -->
+            <div class="card collection-card z-depth-1-half">
+                    <!-- Card image -->
+                    <div class="view zoom">
+                          <div class="view overlay">
+                      <img src="https://wallpapercave.com/wp/wp3829571.jpg" class="img-fluid"
+                        alt="">
+                        <div class="mask flex-center rgba-black-strong">
+                              <p class="white-text">Darksiders III <i class="fas fa-search"></i></p>
+                          </div>
+                      </div>
+                    
+                    </div>
+              <!-- Card image -->
+            </div>
+            <!-- Collection card -->
+          </div>
+          <!-- Grid column -->
+      
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-6 mb-md-0 mb-4">
+            <!-- Collection card -->
+            <div class="card collection-card z-depth-1-half">
+                    <!-- Card image -->
+                    <div class="view zoom">
+                          <div class="view overlay">
+                      <img src="https://picserio.com/data/out/305/bioshock-iphone-wallpaper_5146111.jpg" class="img-fluid"
+                        alt="">
+                        <div class="mask flex-center rgba-black-strong">
+                              <p class="white-text">Bioshock Infinite <i class="fas fa-search"></i></p>
+                          </div>
+                      </div>
+                    
+                    </div>
+              <!-- Card image -->
+            </div>
+            <!-- Collection card -->
+          </div>
+          <!-- Grid column -->
+      
+          <!-- Fourth column -->
+          <div class="col-lg-3 col-md-6">
+            <!-- Collection card -->
+            <div class="card collection-card z-depth-1-half">
+                    <!-- Card image -->
+                    <div class="view zoom">
+                          <div class="view overlay">
+                      <img src="https://1.bp.blogspot.com/-MY2AlWhaJXw/WG34lwAixKI/AAAAAAAAWDA/dFFwSG8hK7sdRzEHv_Aq9809ZxPUFClawCLcB/s1600/Watch%2Bdogs%2B2%2BWallpapers%2B32.jpg" class="img-fluid"
+                        alt="">
+                        <div class="mask flex-center rgba-black-strong">
+                              <p class="white-text">Watch Dogs 2 <i class="fas fa-search"></i></p>
+                          </div>
+                      </div>
+                    
+                    </div>
+              <!-- Card image -->
+            </div>
+            <!-- Collection card -->
+          </div>
+          <!-- Fourth column -->
+      
+        </div>
+        <!-- Grid row -->
+      
+      </section>
+      <!-- Section: Products v.4 -->
+      <nav aria-label="Page navigation example">
+            <ul class="pagination pg-blue justify-content-center">
+              <li class="page-item ">
+                <a class="page-link" tabindex="-1"style="color: rgba(202, 228, 225, 0.92)">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" style="color:rgba(202, 228, 225, 0.92)">1</a></li>
+              <li class="page-item active">
+                <a class="page-link"style="color: rgba(202, 228, 225, 0.92)">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link"style="color: rgba(202, 228, 225, 0.92)">3</a></li>
+              <li class="page-item ">
+                <a class="page-link"style="color: rgba(202, 228, 225, 0.92)">Next</a>
+              </li>
+            </ul>
+          </nav>
+</body>
+<footer class="page-footer font-small  rgba-black-strong pt-4" style="margin-top: 100px;" >
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+            <button type="button" class="btn btn-vk"><i class="fab fa-vk pr-1"></i> Vkontakte</button>
+        
+        </li>
+        <li class="list-inline-item">
+            <button type="button" class="btn btn-yt"><i class="fab fa-youtube pr-1"></i> Youtube</button>
+        </li>
+        <li class="list-inline-item">
+            <button type="button" class="btn btn-git"><i class="fab fa-github pr-1"></i> Github</button>
+         
+        </li>
+        <li class="list-inline-item">
+            <button type="button" class="btn btn-tw"><i class="fab fa-twitter pr-1"></i> Twitter</button>
+        </li>
+        <li class="list-inline-item">
+            <button type="button" class="btn btn-ins"><i class="fab fa-instagram pr-1"></i> Instagram</button>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+</body>
+
+</body>
+</html>
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/gallery.js"></script>
+  <script src="/smartbasket/smartbasket.min.js"></script>
+  <script type="text/javascript">
+      function addRow() {
+
+        table = document.getElementById('cartTable') 
+
+
+    var row = table.insertRow(-1);
+    var cell0 = row.insertCell(0);
+    var cell1 = row.insertCell(1);
+    var cell2 = row.insertCell(2);
+    cell0.innerHTML = "2";
+    cell1.innerHTML = "Mortal Kombat X";
+    cell2.innerHTML = "1000";
+
+
+}
+  </script>
+</html>

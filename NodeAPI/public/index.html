@@ -1,317 +1,406 @@
-
-
 <!DOCTYPE html>
-<html lang="en" >
-    
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-  <title>g-Katalog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'><link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,700'>
-      <link rel="stylesheet" type="text/css" href="/public/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
 
-  
-</head>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+      button,h4,span,option,h3,p,input,a {Font-family: 'Comfortaa', cursive;}
+    </style>
 
-<body><header >
+<body>
+  <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+          <a class="navbar-brand" href="#"><strong class="sign__word">G-Katalog</strong></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Домой <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Action.html">Экшн</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Приключения</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">РПГ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Симуляторы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Инди</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Стратегии</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ММО</a>
+          </li>
 
-
-  <script type="text/javascript"> 
-  document.getElementById("search").onsubmit=
- function() {
-  alert(this.anything.value)
-  return false;
- }
-
-
-</script>
-
-
-
-    <div class ="logo">G-Katalog</div>
-
-    
-    <form method="POST" action="" id="search">
-  <div class="container">
-      
-
-  <input type="text" name="search" action="" id="search" method = "post" placeholder="Search..." >
-  <input type="submit" style = "display:none;">
-</form>
-  <div class="search"></div>
-</div>
-
-
-<ul>
-  <li>
-      <a href="#">Action
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-      </a>
-  </li>
-  <li>
-      <a href="#">RPG
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-      </a>
-  </li>
-  <li>
-      <a href="#">Adventure
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-      </a>
-  </li>
-  <li>
-      <a href="#">Racing
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-      </a>
-  </li>
-  <li>
-    <a href="#">Sport
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </a>
-</li>
-</ul>
+            </li>
+              </ul>
+              
+                
+              <ul class="navbar-nav ml-auto nav-flex-icons">
+                  <li class="nav-item">
+                      <a class="nav-link waves-effect waves-light">
+                          <i class="fas fa-headset" data-toggle="modal" data-target="#contact"></i>
+                      </a>
+                    </li>
+                <li class="nav-item">
+                  <a class="nav-link waves-effect waves-light">
+                    <i class="fas fa-luggage-cart" data-toggle="modal" data-target="#modalCart"></i>
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                    aria-labelledby="navbarDropdownMenuLink-333">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+              
+            </div>
+            <form class="form-inline ml-auto">
+              <div class="md-form my-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                
+              </div>
+            </form>
+          </nav>
   
 </header>
 
 <main>
-<div class="bigImage"></div>
-
-
-
-
-
-    <div>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <div class="containerx gal-container">
-    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-      <div class="box">
-        <a href="#" data-toggle="modal" data-target="#1">
-          <img src="http://iichan.hk/vg/src/1550400598768.jpg">
-        </a>
-        <div class="modal fade" id="1" tabindex="-1" role="dialog">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <div class="modal-body">
-                <img src="http://iichan.hk/vg/src/1550400598768.jpg">
-              </div>
-                <div class="col-md-12 description">
-                  <h4>This is the first one on my Gallery</h4>
-                </div>
-            </div>
-          </div>
+  <!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel" style="margin-bottom:50px;margin-top: 75px">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-2" data-slide-to="1"></li>
+      <li data-target="#carousel-example-2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view">
+          <img class="d-block w-100" src="https://s2.best-wallpaper.net/wallpaper/2560x1440/1608/Jump-Ahead-Xbox-games_2560x1440.jpg" alt="First slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Первый в своем роде каталог видеоигр от русского парня Log!S.</h3>
+          <p>(Нет)</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="http://wallpaperswide.com/download/best_games_2013-wallpaper-3840x2160.jpg" alt="Second slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">Thir is the second title</h3>
+          <p>Secondary text</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!--Mask color-->
+        <div class="view">
+          <img class="d-block w-100" src="https://www.wallpaperup.com/uploads/wallpapers/2015/06/18/727512/5f622ea270afe25f7995e0a6b4c44769.jpg" alt="Third slide">
+          <div class="mask rgba-black-light"></div>
+        </div>
+        <div class="carousel-caption">
+          <h3 class="h3-responsive">This is the third title</h3>
+          <p>Third text</p>
         </div>
       </div>
     </div>
-    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-      <div class="box">
-        <a href="#" data-toggle="modal" data-target="#2">
-          <img src="https://overgame.fun/files/news/large/10-08-2018/287.jpg">
-        </a>
-        <div class="modal fade" id="2" tabindex="-1" role="dialog">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <div class="modal-body">
-                <img src="https://overgame.fun/files/news/large/10-08-2018/287.jpg">
-              </div>
-                <div class="col-md-12 description">
-                  <h4>This is the second one on my Gallery</h4>
-                </div>
-            </div>
-          </div>
-        </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
+
+<!-- Modal: modalCart -->
+<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Contact us</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
       </div>
-    </div>
-    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-      <div class="box">
-        <a href="#" data-toggle="modal" data-target="#3">
-          <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/RU/ru/999/EP0002-CUSA13801_00-SEKIROPRE0000001/1547835087000/image">
-        </a>
-        <div class="modal fade" id="3" tabindex="-1" role="dialog">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <div class="modal-body">
-                <img src="https://store.playstation.com/store/api/chihiro/00_09_000/container/RU/ru/999/EP0002-CUSA13801_00-SEKIROPRE0000001/1547835087000/image">
-              </div>
-                <div class="col-md-12 description">
-                  <h4>This is the third one on my Gallery</h4>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-      <div class="box">
-        <a href="#" data-toggle="modal" data-target="#4">
-          <img src="https://insanegames.ru/assets/images/news/the-division-2.jpg">
-        </a>
-        <div class="modal fade" id="4" tabindex="-1" role="dialog">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <div class="modal-body">
-                <img src="https://insanegames.ru/assets/images/news/the-division-2.jpg">
-              </div>
-                <div class="col-md-12 description">
-                  <h4>This is the fourth one on my Gallery</h4>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-      <div class="box">
-        <a href="#" data-toggle="modal" data-target="#5">
-          <img src="http://static.hdw.eweb4.com/media/wallpapers_dl/1/139/1384001-gta-5-logo.jpg">
-        </a>
-        <div class="modal fade" id="5" tabindex="-1" role="dialog">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <div class="modal-body">
-                <img src="http://static.hdw.eweb4.com/media/wallpapers_dl/1/139/1384001-gta-5-logo.jpg">
-              </div>
-                <div class="col-md-12 description">
-                  <h4>This is the fifth one on my Gallery</h4>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!--Body-->
+      <div class="modal-body">
+
+    <!-- Name -->
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+
+    <!-- Email -->
+    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+    <!-- Subject -->
+    <label>Subject</label>
+    <select class="browser-default custom-select mb-4">
+        <option value="" disabled>Choose option</option>
+        <option value="1" selected>Feedback</option>
+        <option value="2">Report a bug</option>
+        <option value="3">Feature request</option>
+        <option value="4">Feature request</option>
+    </select>
+
+    <!-- Message -->
+    <div class="form-group">
+        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
     </div>
 
-    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-      <div class="box">
-        <a href="#" data-toggle="modal" data-target="#9">
-          <img src="http://www.gameplane.de/wp-content/uploads/2016/06/watch-dogs-2-logo.png">
-        </a>
-        <div class="modal fade" id="9" tabindex="-1" role="dialog">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <div class="modal-body">
-                <img src="http://www.gameplane.de/wp-content/uploads/2016/06/watch-dogs-2-logo.png">
-              </div>
-                <div class="col-md-12 description">
-                  <h4>This is the ninth one on my Gallery</h4>
-                </div>
-            </div>
-          </div>
-        </div>
+    <!-- Copy -->
+    <div class="custom-control custom-checkbox mb-4">
+        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+    </div>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary">Send</button>
       </div>
     </div>
-    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
-      <div class="box">
-        <a href="#" data-toggle="modal" data-target="#10">
-          <img src="https://www.jvfrance.com/wp-content/uploads/2018/08/Devil-May-Cry-5-Dante.jpg">
-        </a>
-        <div class="modal fade" id="10" tabindex="-1" role="dialog">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <div class="modal-body">
-                <img src="https://www.jvfrance.com/wp-content/uploads/2018/08/Devil-May-Cry-5-Dante.jpg">
-              </div>
-                <div class="col-md-12 description">
-                  <h4>This is the tenth one on my Gallery</h4>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
+  </div>
 </div>
-</div>
-</main>
- <footer>
-  <div class="containerx">
-    <div class="row text-center">
-    
-              <div class="col-md-6 col-sm-6 col-xs-12">
-               <ul class="list-inline">
-                          
-                            <li>
-                                 <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-                            </li>
-                            
-                            <li>
-                              <a href="#"><i class="fa fa-vk fa-2x"></i></a>
-                         </li>
-                           
-                            <li>
-                                 <a href="#"><i class="fa fa-github fa-2x"></i></a>
-                            </li>
+<!-- Modal: modalCart -->
 
-                            <li>
-                                 <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-                           </li>
-                           
-                  </ul>
-                </div>
-        
-              <div class="col-md-6 col-sm-6 col-xs-12">
-               <ul class="menu list-inline">
-                          
-                      <li>
-                         <a href="#">Home</a>
-                       </li>
-                            
-                       <li>
-                          <a href="#">About</a>
-                       </li>
-                            
-                       <li>
-                         <a href="#">Blog</a>
-                       </li>
-                            
-                       <li>
-                          <a href="#">Gallery </a>
-                       </li>
-                            
-                       <li>
-                         <a href="#">Contact</a>
-                      </li>
-            
-              </ul>
-            </div>
-        
-        
-        </div> 
-     </div>
-</footer>
 
- <div class="copyright">
-  <div class="containerx">
-    
-      <div class="row text-center">
-            <hr class="hr">
-          <p>Copyright © 2019 All rights reserved</p>
+<!-- Modal: modalCart -->
+<div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Your cart</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
       </div>
+      <!--Body-->
+      <div class="modal-body">
+
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Product name</th>
+              <th>Price</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Product 1</td>
+              <td>100$</td>
+              <td><a><i class="fas fa-times"></i></a></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <!--Footer-->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal: modalCart -->
+
+
+
+<!-- Grid row -->
+<div class="row" >
+  
+  <!-- Grid column -->
+  <div class="col-md-12 d-flex justify-content-center mb-5">
+    
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all"><span class="sign__word">Новинки</span></button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1"><span class="sign__word">Популярные</span></button>
+    <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2"><span class="sign__word">Предзаказ</span></button>
+
+  </div>
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
+<!-- Grid row -->
+<div class="gallery" id="gallery" >
+    <div class="view overlay">
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
       
-     </div>
- </div>
+    <a><img class="img-fluid z-depth-1" src="https://i.ytimg.com/vi/A6GJ1BZue7E/maxresdefault.jpg" alt="Card image cap"></a>
+    <div class="mask flex-center rgba-black-strong">
+        <p class="white-text">Terraria <i class="fas fa-search"></i></p>
+    </div>
+</div>
+  </div>
+  <!-- Grid column -->
 
+  <!-- Grid column -->
+  <div class="view overlay">
+  <div class="mb-3 pics animation all 1">
+      
+    <img class="img-fluid" src="https://hdqwalls.com/download/gta-5-logo-2-640x960.jpg" alt="Card image cap">
+    <div class="mask flex-center rgba-black-strong">
+        <p class="white-text">Grand Theft Auto V <i class="fas fa-search"></i></p>
+    </div>
+</div>
+  </div>
+  <!-- Grid column -->
+  <div class="view overlay">
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+      
+    <img class="img-fluid" src="https://get.wallhere.com/photo/Assassin's-Creed-Assassin's-Creed-Unity-screenshot-131071.jpg" alt="Card image cap">
+    <div class="mask flex-center rgba-black-strong">
+        <p class="white-text">Assassin's Creed Unity <i class="fas fa-search"></i></p>
+    </div>
+</div>
+  </div>
+  <!-- Grid column -->
+  <div class="view overlay">
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+      
+    <img class="img-fluid" src="https://www.gamereactor.es/media/49/wefinallyget_2294963b.jpg" alt="Card image cap">
+    <div class="mask flex-center rgba-black-strong">
+        <p class="white-text">Metro Exodus <i class="fas fa-search"></i></p>
+    </div>
+</div>
+  </div>
+  <!-- Grid column -->
+  <div class="view overlay">
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 2">
+      
+    <img class="img-fluid" src="https://coins.leogaming.net/img/news/uploads/5d3197c79ca8fcropped-1366-768-973131.jpg" alt="Card image cap">
+    <div class="mask flex-center rgba-black-strong">
+        <p class="white-text">Darksiders III <i class="fas fa-search"></i></p>
+    </div>
+</div>
+  </div>
+  <!-- Grid column -->
+  <div class="view overlay">
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+      
+    <img class="img-fluid" src="https://iwantgames.ru/wp-content/uploads/fallout-76-thumb.jpg" alt="Card image cap">
+    <div class="mask flex-center rgba-black-strong">
+        <p class="white-text">Fallout 76 <i class="fas fa-search"></i></p>
+    </div>
+</div>
+  </div>
+  <!-- Grid column -->
+  
+</div>
+<!-- Grid row -->
+<center><button type="button" class="btn btn-outline-info btn-rounded waves-effect">Весь каталог <i class="fas fa-th-list"></i></button></center>>
+</main>
+ <!-- Footer -->
+<!-- Footer -->
+<footer class="page-footer font-small  rgba-black-strong pt-4" >
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+            <button type="button" class="btn btn-vk"><i class="fab fa-vk pr-1"></i> Vkontakte</button>
+        
+        </li>
+        <li class="list-inline-item">
+            <button type="button" class="btn btn-yt"><i class="fab fa-youtube pr-1"></i> Youtube</button>
+        </li>
+        <li class="list-inline-item">
+            <button type="button" class="btn btn-git"><i class="fab fa-github pr-1"></i> Github</button>
+         
+        </li>
+        <li class="list-inline-item">
+            <button type="button" class="btn btn-tw"><i class="fab fa-twitter pr-1"></i> Twitter</button>
+        </li>
+        <li class="list-inline-item">
+            <button type="button" class="btn btn-ins"><i class="fab fa-instagram pr-1"></i> Instagram</button>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+</body>
 
 </body>
+</html>
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/gallery.js"></script>
+  <script type="text/javascript">
+
+</script>
 </html>
